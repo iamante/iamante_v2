@@ -1,0 +1,154 @@
+.skill {
+  background-color: #161616;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skill-text {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.skill-text > span {
+  text-transform: uppercase;
+  color: #989898;
+}
+
+.skill-text > h1 {
+  margin: 0;
+  font-size: 3em;
+  font-family: "Englebert", sans-serif;
+  color: #161616;
+  text-shadow: -4.4px -4.4px 0 #fff, 4.4px -4.4px 0 #fff, -4.4px 4.4px 0 #fff,
+    4.4px 4.4px 0 #fff;
+  text-transform: uppercase;
+}
+
+.skill-text > p {
+  width: 75%;
+  margin: 24px auto;
+}
+
+.card-container {
+  height: 500px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.card-container > .left-arrow,
+.card-container > .right-arrow {
+  font-size: 4rem;
+  position: absolute;
+}
+
+.card-container > .right-arrow {
+  right: 0;
+  top: 50%;
+}
+
+.card-container > .left-arrow {
+  top: 50%;
+  left: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .skill-text {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .skill-text > h1 {
+    font-size: 2.5em;
+    text-shadow: -3.3px -3.3px 0 #fff, 3.3px -3.3px 0 #fff, -3.3px 3.3px 0 #fff,
+      3.3px 3.3px 0 #fff;
+  }
+
+  .skill-text > p {
+    margin: 24px auto;
+    padding: 0 25px;
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+  .card-container {
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    padding: 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 70px;
+    height: 23%;
+    margin: auto 10px;
+  }
+
+  .card > img {
+    width: 40px;
+    margin-top: 10px;
+  }
+
+  .card > p {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skill-text {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .skill-text > h1 {
+    font-size: 2.5em;
+    text-shadow: -3.3px -3.3px 0 #fff, 3.3px -3.3px 0 #fff, -3.3px 3.3px 0 #fff,
+      3.3px 3.3px 0 #fff;
+  }
+
+  .skill-text > p {
+    margin: 15px auto;
+    padding: 0 25px;
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+  .card-container {
+    height: 280px;
+    width: 100%;
+    margin: 0;
+    padding: 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 70px;
+    height: 37%;
+    margin: 10px;
+  }
+
+  .card > img {
+    width: 40px;
+    margin-top: 10px;
+  }
+
+  .card > p {
+    font-size: 0.5rem;
+  }
+}

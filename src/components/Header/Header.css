@@ -1,0 +1,151 @@
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li,
+.logo {
+  padding: 1.5rem;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #161616;
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar li:last-child a {
+  color: #161616;
+  padding: 0.7rem 2rem;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 3rem;
+  right: 4rem;
+  display: none;
+}
+
+.navbar li:last-child:hover {
+  animation: shake 0.25s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .menu-icon {
+    display: block;
+    top: 2.2rem;
+    right: 2rem;
+  }
+
+  #alogo,
+  #jlogo {
+    fill: #fff;
+  }
+
+  svg {
+    width: 47px;
+    height: 29px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #161616;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .navbar li:last-child a {
+    padding: 0.7rem 2rem;
+  }
+
+  .navmenu {
+    width: 100%;
+    flex-direction: column;
+    display: none !important;
+  }
+
+  .navmenu.active {
+    display: flex !important;
+  }
+
+  .navbar li a {
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar li,
+  .logo {
+    padding: 0.5rem;
+  }
+
+  .menu-icon {
+    top: 1rem;
+    right: 1.5rem;
+  }
+
+  .navmenu > li {
+    font-size: 12px;
+    padding: 1rem;
+  }
+
+  .navbar li:last-child {
+    background-position: none !important;
+  }
+}

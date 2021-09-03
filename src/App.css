@@ -1,0 +1,9 @@
+.App {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.sections {
+    width: 100%;
+    position: relative;
+}
