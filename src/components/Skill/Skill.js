@@ -6,7 +6,7 @@ import {FaChevronLeft, FaChevronRight} from 'react-icons/fa'
 
 function Skill() {
     return (
-        <section className="skill">
+        <section id="skill" className="skill">
             <div className="skill-text">
                 <span>My Skills</span>
                 <h1>Expertise</h1>

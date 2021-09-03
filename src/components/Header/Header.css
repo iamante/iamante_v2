@@ -23,7 +23,7 @@
   text-decoration: none;
   color: #161616;
   display: block;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -37,6 +37,11 @@
   top: 3rem;
   right: 4rem;
   display: none;
+}
+
+.navbar li:last-child {
+  background-repeat: no-repeat;
+  background-position: 60% 40%;
 }
 
 .navbar li:last-child:hover {
@@ -79,11 +84,15 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 576px) {
   .menu-icon {
     display: block;
-    top: 2.2rem;
-    right: 2rem;
+    top: 1.2rem;
+    right: 1.2rem;
+  }
+
+  .logo {
+    padding: 0.5rem;
   }
 
   #alogo,
@@ -102,7 +111,11 @@
     background-color: #161616;
     color: #fff;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 12px;
+  }
+
+  .navbar li {
+    padding: 1rem;
   }
 
   .navbar li:last-child a {
@@ -122,27 +135,6 @@
   .navbar li a {
     color: #fff;
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .navbar {
-    padding: 0.5rem 1rem;
-  }
-
-  .navbar li,
-  .logo {
-    padding: 0.5rem;
-  }
-
-  .menu-icon {
-    top: 1rem;
-    right: 1.5rem;
-  }
-
-  .navmenu > li {
-    font-size: 12px;
-    padding: 1rem;
   }
 
   .navbar li:last-child {

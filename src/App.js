@@ -16,16 +16,17 @@ function App() {
         <Hero />
         <About />
         <Skill />
-        {WorkData.map((data, index) => {
+        {WorkData.map((data) => {
           return (
-            <>
-              <Work
-                number={data.number}
-                image={data.image}
-                title={data.title}
-                description={data.desicription}
-              />
-            </>
+            <Work
+              key={data.id}
+              number={data.number}
+              image={data.image}
+              title={data.title}
+              description={data.desicription}
+              tech={data.tech}
+              tooltip={data.tooltip}
+            /> 
           );
         })}
         <Contact />

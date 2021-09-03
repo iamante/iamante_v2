@@ -2,44 +2,47 @@ import React from "react";
 import Button from "../Button/Button";
 import "./Work.css";
 import { FaGithub } from "react-icons/fa";
-import { WorkData } from "./WorkData";
 
-function Work(props) {
+function Work({ id, image, number, title, description, tech }) {
+  const hello = tech.map(({ tooltip }) =>
+    tooltip.map((x) => x)
+  );
+  console.log(hello);
   return (
-    <section className="work">
+    <section id="work" className="work">
       <div className="img-container">
-        <img src={props.image} alt="first work" />
+        <img src={image} alt="first work" />
         <svg viewBox="-298 30 470 15">
           <text className="svgStroke" y="50">
-            {props.number}
+            {number}
           </text>
-          <text y="50">{props.number}</text>
+          <text y="50">{number}</text>
         </svg>
       </div>
       <div className="text-container">
         <span>PORTFOLIO</span>
         <h1>
-          <span>{props.title}</span>
+          <span>{title}</span>
         </h1>
-        <p>{props.description}</p>
+        <p>{description}</p>
         <code>Main tech used:</code>
         <div className="icon-container">
-          <div className="tooltip">
-            <img src="/images/icons/laravel.svg" alt="" width="50" />
-            <span className="tooltip-icon">Laravel</span>
-          </div>
-          <div className="tooltip">
-            <img src="/images/icons/php.svg" alt="" width="50" />
-            <span className="tooltip-icon">Php</span>
-          </div>
-          <div className="tooltip">
-            <img src="/images/icons/mysql.svg" alt="" width="50" />
-            <span className="tooltip-icon">MySQL</span>
-          </div>
-          <div className="tooltip">
-            <img src="/images/icons/bootstrap.svg" alt="" width="50" />
-            <span className="tooltip-icon">Bootstrap</span>
-          </div>
+          {
+            tech.map(({ tech_icon, tooltip }) =>
+              tech_icon.map((x, index) => (
+                <div key={index} className="tooltip">
+                  <img src={x} alt="" width="50" />
+                  <span className="tooltip-icon">{hello}</span>
+                </div>
+              ))
+            )
+            // <div className="tooltip">
+            //   <img src={x.tech_icon.map((i) => i)} alt="" width="50" />
+            //     <span key={id} className="tooltip-icon">
+            //       {x.tooltip.map((i) => i)}
+            //     </span>
+            // </div>
+          }
         </div>
         <Button title="Source Code" icon={<FaGithub />} />
       </div>

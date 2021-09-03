@@ -1,10 +1,10 @@
 .skill {
   background-color: #161616;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 80px 50px;
 }
 
 .skill-text {
@@ -35,7 +35,7 @@
 
 .card-container {
   height: 500px;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   padding: 50px;
   display: flex;
@@ -60,10 +60,13 @@
   left: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
+  .skill {
+    padding: 20px 0;
+  }
+
   .skill-text {
     font-size: 1rem;
-    margin: 0;
   }
 
   .skill-text > h1 {
@@ -81,7 +84,7 @@
   }
 
   .card-container {
-    height: 400px;
+    height: 300px;
     width: 100%;
     margin: 0;
     padding: 0 25px;
@@ -92,7 +95,7 @@
 
   .card {
     width: 70px;
-    height: 23%;
+    height: 35%;
     margin: auto 10px;
   }
 
@@ -106,49 +109,3 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .skill-text {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  .skill-text > h1 {
-    font-size: 2.5em;
-    text-shadow: -3.3px -3.3px 0 #fff, 3.3px -3.3px 0 #fff, -3.3px 3.3px 0 #fff,
-      3.3px 3.3px 0 #fff;
-  }
-
-  .skill-text > p {
-    margin: 15px auto;
-    padding: 0 25px;
-    width: 100%;
-    font-size: 0.8rem;
-    line-height: 20px;
-  }
-
-  .card-container {
-    height: 280px;
-    width: 100%;
-    margin: 0;
-    padding: 0 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card {
-    width: 70px;
-    height: 37%;
-    margin: 10px;
-  }
-
-  .card > img {
-    width: 40px;
-    margin-top: 10px;
-  }
-
-  .card > p {
-    font-size: 0.5rem;
-  }
-}

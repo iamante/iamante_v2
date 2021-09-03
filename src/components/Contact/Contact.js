@@ -4,7 +4,7 @@ import Button from '../Button/Button'
 
 function Contact() {
     return (
-        <section className="contact">
+        <section id="contact" className="contact">
             <div className="form-container">
                 <span>Love what you see?</span>
                 <h1>Let's talk</h1>
