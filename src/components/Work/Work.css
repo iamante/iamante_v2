@@ -74,11 +74,6 @@
   position: relative;
 }
 
-.text-container > span {
-  text-transform: uppercase;
-  color: #989898;
-}
-
 .text-container h1 {
   margin: 0;
   font-size: 3em;
@@ -90,7 +85,7 @@
 
 .text-container h3 {
   text-transform: uppercase;
-  margin: 0;
+  margin: 10px 0;
   color: #989898;
 }
 
