@@ -1,42 +1,40 @@
 .hero {
   width: 100%;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: calc(100vh - 133px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .hero-title {
   font-family: "Englebert", sans-serif;
-  font-size: 3rem;
   padding-top: 4rem;
-  display: flex;
-  flex-direction: column;
 }
 
 .hero-title h4 {
   margin: 0;
   font-weight: 500;
+  font-size: 40px;
 }
 
-.hero-title > div {
+.hero-title > h1 {
   text-transform: uppercase;
-  line-height: 6rem;
-  font-size: 7rem;
+  font-weight: normal;
+  margin: 0;
+  font-size: 120px;
+  line-height: 3cm;
 }
 
-.hero-title > div:nth-last-child(2),
-.hero-title > h4:nth-last-child(1) {
-  margin-left: 100px;
+.hero-title h1 span {
+  display: block;
+  text-align: end;
+  margin-left: 70px;
 }
 
-.hero-title > div:nth-last-child(3) {
-  margin-left: 20px;
-}
-
-.hero-title h1 > span {
-  padding-right: 20px;
+.hero-title > span {
+  font-size: 40px;
+  float: right;
 }
 
 .hero img {
@@ -89,7 +87,6 @@
     opacity: 0;
   }
 }
-
 
 @keyframes light2 {
   0% {
@@ -147,14 +144,14 @@
     width: 920px;
   }
 
-  .hero-title {
-    font-size: 2rem;
-    padding-top: 35%;
+  .hero-title h4,
+  .hero-title > span {
+    font-size: 30px;
   }
 
-  .hero-title > div {
-    line-height: 4rem;
-    font-size: 4rem;
+  .hero-title h1 {
+    font-size: 80px;
+    line-height: 2cm;
   }
 
   .hero img {
@@ -163,19 +160,20 @@
     left: 0;
     bottom: 0;
   }
-
-  .hero-title > div:nth-last-child(2),
-  .hero-title > span:nth-last-child(1) {
-    margin-left: 70px;
-  }
 }
 
-@media screen and (max-width: 375px) {
-  .hero-title {
-    font-size: 1.2rem;
+@media screen and (max-width: 360px) { 
+  .hero-title h4,
+  .hero-title > span {
+    font-size: 25px;
   }
 
-  .hero-title div {
-    font-size: 3.5rem;
+  .hero-title h1 {
+    font-size: 70px;
+    line-height: 1.7cm;
+  }
+
+  .hero-title h1 span {
+    margin-left: 30px;
   }
 }
