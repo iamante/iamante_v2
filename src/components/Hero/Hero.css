@@ -40,6 +40,7 @@
 .hero img {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
   height: auto;
 }
@@ -124,7 +125,6 @@
 
 @media screen and (max-width: 768px) {
   .hero img {
-    height: 45%;
     width: 1450px;
     left: 0;
     bottom: 0;
@@ -133,15 +133,21 @@
   .hero-title {
     padding-top: 180px;
   }
+
+  .hero-title h4,
+  .hero-title > span {
+    font-size: 35px;
+  }
+
+  .hero-title h1 {
+    font-size: 90px;
+    line-height: 2cm;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .hero {
     height: calc(100vh - 64px);
-  }
-
-  .hero img {
-    width: 920px;
   }
 
   .hero-title h4,
@@ -155,7 +161,6 @@
   }
 
   .hero img {
-    height: 45%;
     width: 1020px;
     left: 0;
     bottom: 0;
