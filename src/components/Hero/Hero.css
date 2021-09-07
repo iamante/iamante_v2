@@ -23,7 +23,6 @@
   font-weight: normal;
   margin: 0;
   font-size: 120px;
-  line-height: 3cm;
 }
 
 .hero-title h1 span {
@@ -157,7 +156,6 @@
 
   .hero-title h1 {
     font-size: 80px;
-    line-height: 2cm;
   }
 
   .hero img {
