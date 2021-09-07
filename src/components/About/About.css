@@ -13,12 +13,14 @@
   padding: 50px;
 }
 
-.about-text > span:nth-child(1) {
+.about-text > h4:nth-child(1) {
   text-transform: uppercase;
+  margin: 0;
   color: #989898;
 }
 
-.about-text > span:nth-child(3) {
+.about-text > h4:nth-child(3) {
+  margin-top: 0;
   color: #989898;
 }
 
@@ -29,10 +31,6 @@
   color: #161616;
   text-shadow: -4.4px -4.4px 0 #fff, 4.4px -4.4px 0 #fff, -4.4px 4.4px 0 #fff,
     4.4px 4.4px 0 #fff;
-}
-
-.about-text h1 > span {
-  display: block;
 }
 
 .about-text p {
@@ -84,9 +82,7 @@
 
   .about-text {
     font-size: 1rem;
-    margin: 0;
     padding: 40px 30px;
-    position: relative;
   }
 
   .about-text h1 {

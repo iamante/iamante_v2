@@ -9,7 +9,7 @@ function Skill() {
   return (
     <section id="skill" className="skill">
       <div className="skill-text">
-        <span>My Skills</span>
+        <h4>My Skills</h4>
         <h1>Expertise</h1>
         <p>
           Here are some of technologies that i worked with web development. From

@@ -33,7 +33,7 @@ function Work({
         </svg>
       </div>
       <div className="text-container">
-        <span>PORTFOLIO</span>
+        <h3>PORTFOLIO</h3>
         <h1>
           {title.split("\n").map((x, index) => (
             <span key={index}>{x}</span>
