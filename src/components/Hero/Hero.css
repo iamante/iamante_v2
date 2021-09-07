@@ -1,15 +1,15 @@
 .hero {
   width: 100%;
   position: relative;
-  height: calc(100vh - 133px);
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .hero-title {
   font-family: "Englebert", sans-serif;
-  padding-top: 4rem;
+  margin-bottom: 50px;
 }
 
 .hero-title h4 {
@@ -23,6 +23,7 @@
   font-weight: normal;
   margin: 0;
   font-size: 120px;
+  line-height: 3cm;
 }
 
 .hero-title h1 span {
@@ -156,6 +157,7 @@
 
   .hero-title h1 {
     font-size: 80px;
+    line-height: 2cm;
   }
 
   .hero img {
