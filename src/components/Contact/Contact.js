@@ -10,7 +10,7 @@ function Contact() {
   useEffect(() => {
     setTimeout(() => {
       showResult(false);
-    }, 6000);
+    }, 8000);
   }, [result]);
 
   return (
@@ -19,7 +19,8 @@ function Contact() {
         <span>Love what you see?</span>
         <h1>Let's talk</h1>
         <p>
-          You can also email me at <a href="mailto:amantejamse@gmail.com">amantejamse@gmail.com</a>
+          You can also email me at{" "}
+          <a href="mailto:amantejamse@gmail.com">amantejamse@gmail.com</a>
         </p>
         <Mailer propResult={showResult} />
       </div>

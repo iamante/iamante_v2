@@ -152,5 +152,21 @@
   .card img {
     width: 40px;
   }
-  
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 50px;
+    margin: 5px;
+  }
+
+  .card p {
+    font-size: 8px;
+    margin-bottom: 15px;
+  }
+
+  .card img {
+    width: 30px;
+    margin-top: 15px;
+  }
 }
