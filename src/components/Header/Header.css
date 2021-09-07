@@ -19,6 +19,14 @@
   padding: 1.5rem;
 }
 
+.logo svg {
+  cursor: pointer;
+}
+
+.logo svg:hover path {
+  fill: #d52d2d;
+}
+
 .navbar li a {
   text-decoration: none;
   color: #161616;
@@ -27,9 +35,16 @@
   text-transform: uppercase;
 }
 
+.navbar li a:hover {
+  color: #d52d2d;
+}
+
 .navbar li:last-child a {
-  color: #161616;
+  color: #fff;
   padding: 0.7rem 2rem;
+  background-color: #161616;
+  transition: background-color 0.2s;
+  border-radius: 2px;
 }
 
 .menu-icon {
@@ -39,60 +54,24 @@
   display: none;
 }
 
-.navbar li:last-child {
-  background-repeat: no-repeat;
-  background-position: 60% 40%;
+.navbar li:last-child a:hover {
+  background-color: #d52d2d;
 }
 
-.navbar li:last-child:hover {
-  animation: shake 0.25s;
-}
-
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
-    top: 1.2rem;
-    right: 1.2rem;
+    top: 1.5rem;
+    right: 2rem;
   }
 
   .logo {
     padding: 0.5rem;
+  }
+
+  .logo svg {
+    width: 47px;
+    height: 29px;
   }
 
   #alogo,
@@ -100,26 +79,23 @@
     fill: #fff;
   }
 
-  svg {
-    width: 47px;
-    height: 29px;
-  }
-
   .navbar {
     flex-direction: column;
     align-items: flex-start;
     background-color: #161616;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
     font-size: 12px;
   }
 
   .navbar li {
     padding: 1rem;
+    font-size: 13px;
   }
 
   .navbar li:last-child a {
     padding: 0.7rem 2rem;
+    border: 2px solid;
   }
 
   .navmenu {
@@ -139,5 +115,24 @@
 
   .navbar li:last-child {
     background-position: none !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    padding: 0.2rem 0.8rem;
+    /* font-size: 10px; */
+  }
+
+  .logo svg {
+    width: 30px;
+  }
+
+  .menu-icon {
+    top: 0.9rem;
+  }
+
+  .menu-icon svg {
+    height: 25px;
   }
 }

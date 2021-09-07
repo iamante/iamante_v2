@@ -54,11 +54,13 @@ function Header() {
               Contact
             </a>
           </li>
-          <li
-            className="nav-list"
-            style={{ backgroundImage: "url(/images/bg-resume.png)" }}
-          >
-            <a className="nav-links" target="_blank" href="/resume/CV - James Amante.pdf" onClick={closeMobileMenu}>
+          <li className="nav-list">
+            <a
+              className="nav-links"
+              target="_blank"
+              href="/resume/CV - James Amante.pdf"
+              onClick={closeMobileMenu}
+            >
               Resume
             </a>
           </li>

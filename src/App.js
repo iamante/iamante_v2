@@ -26,6 +26,8 @@ function App() {
               description={data.desicription}
               tech={data.tech}
               tooltip={data.tooltip}
+              github_url={data.github_url}
+              figma_url={data.figma_url}
             /> 
           );
         })}

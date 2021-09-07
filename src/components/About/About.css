@@ -3,23 +3,27 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding: 80px 50px;
+  padding: 150px 50px;
 }
 
 .about-text {
   color: white;
   font-size: 1.2rem;
   width: 100%;
-  padding: 30px;
+  padding: 50px;
 }
 
-.about-text > span {
+.about-text > span:nth-child(1) {
   text-transform: uppercase;
   color: #989898;
 }
 
+.about-text > span:nth-child(3) {
+  color: #989898;
+}
+
 .about-text h1 {
-  margin: 0;
+  margin: 10px 0;
   font-size: 3em;
   font-family: "Englebert", sans-serif;
   color: #161616;
@@ -35,6 +39,7 @@
   text-indent: 50px;
   text-align: justify;
   text-justify: inter-word;
+  line-height: 30px;
 }
 
 .about-img {
@@ -48,7 +53,7 @@
 
 .about-img > img {
   position: absolute;
-  max-width: 540px;
+  /* max-width: 540px; */
   width: 100%;
   height: auto;
 }
@@ -72,17 +77,15 @@
   z-index: 4;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .about {
-    flex-direction: column-reverse;
-    text-align: center;
     padding: 20px;
   }
 
   .about-text {
     font-size: 1rem;
     margin: 0;
-    padding: 30px 20px;
+    padding: 40px 30px;
     position: relative;
   }
 
@@ -118,5 +121,41 @@
   .about-img > img:nth-child(4) {
     z-index: 1;
     top: 3px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .about-text {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about-text {
+    padding: 0;
+    text-align: start;
+  }
+
+  .about-img img {
+    padding: 40px;
+  }
+
+  .about-text > span {
+    font-size: 0.7rem;
+  }
+
+  .about-text h1 {
+    font-size: 2em;
+    text-shadow: -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff,
+      3px 3px 0 #fff;
+  }
+
+  .about-text p {
+    text-indent: 15px;
+    font-size: 0.8rem;
   }
 }
