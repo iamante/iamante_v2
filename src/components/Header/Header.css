@@ -63,7 +63,7 @@
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
-    top: 1.5rem;
+    top: 1rem;
     right: 2rem;
   }
 
@@ -86,7 +86,7 @@
     align-items: flex-start;
     background-color: #161616;
     color: #fff;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     font-size: 12px;
   }
 

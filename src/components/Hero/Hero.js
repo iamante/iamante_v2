@@ -5,9 +5,10 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-title">
-        <h4>Ahoy! I'm</h4>
-        <h1>James <span>Amante</span></h1>
-        <span>A web developer.</span>
+        <h1>
+          <span>Ahoy! I'm</span> James <span>Amante</span>
+          <span>A web developer.</span>
+        </h1>
       </div>
       <img src="images/cloud.png" alt="black-cloud" />
       <img src="images/light1.png" alt="lightning" id="light1" />

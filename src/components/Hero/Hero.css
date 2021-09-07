@@ -12,12 +12,6 @@
   margin-bottom: 50px;
 }
 
-.hero-title h4 {
-  margin: 10px 0;
-  font-weight: 500;
-  font-size: 40px;
-}
-
 .hero-title > h1 {
   text-transform: uppercase;
   font-weight: normal;
@@ -26,15 +20,19 @@
   line-height: 3cm;
 }
 
-.hero-title h1 span {
+.hero-title h1 span:last-child,
+.hero-title h1 span:nth-child(2) {
   display: block;
   text-align: end;
   margin-left: 70px;
 }
 
-.hero-title > span {
+.hero-title h1 span:last-child,
+.hero-title h1 span:first-child {
   font-size: 40px;
-  float: right;
+  text-transform: none;
+  display: block;
+  line-height: 3ch;
 }
 
 .hero img {
@@ -130,18 +128,19 @@
     bottom: 0;
   }
 
-  .hero-title {
-    padding-top: 180px;
+  .hero-title > h1 {
+    font-size: 100px;
+    line-height: 2.5cm;
   }
-
-  .hero-title h4,
-  .hero-title > span {
+  
+  .hero-title h1 span:last-child,
+  .hero-title h1 span:nth-child(2) {
+    margin-left: 70px;
+  }
+  
+  .hero-title h1 span:last-child,
+  .hero-title h1 span:first-child {
     font-size: 35px;
-  }
-
-  .hero-title h1 {
-    font-size: 90px;
-    line-height: 2cm;
   }
 }
 
@@ -150,14 +149,23 @@
     height: calc(100vh - 64px);
   }
 
-  .hero-title h4,
-  .hero-title > span {
-    font-size: 30px;
+  .hero-title {
+    margin-bottom:30px;
   }
 
-  .hero-title h1 {
+  .hero-title > h1 {
     font-size: 80px;
-    line-height: 2cm;
+    line-height: 2.2cm;
+  }
+  
+  .hero-title h1 span:last-child,
+  .hero-title h1 span:nth-child(2) {
+    margin-left: 70px;
+  }
+  
+  .hero-title h1 span:last-child,
+  .hero-title h1 span:first-child {
+    font-size: 25px;
   }
 
   .hero img {
@@ -167,18 +175,23 @@
   }
 }
 
-@media screen and (max-width: 360px) { 
-  .hero-title h4,
-  .hero-title > span {
-    font-size: 25px;
+@media screen and (max-width: 360px) {
+  .hero-title {
+    margin-bottom:30px;
   }
 
-  .hero-title h1 {
-    font-size: 70px;
-    line-height: 1.7cm;
+  .hero-title > h1 {
+    font-size: 60px;
+    line-height: 1.5cm;
   }
-
-  .hero-title h1 span {
-    margin-left: 30px;
+  
+  .hero-title h1 span:last-child,
+  .hero-title h1 span:nth-child(2) {
+    margin-left: 70px;
+  }
+  
+  .hero-title h1 span:last-child,
+  .hero-title h1 span:first-child {
+    font-size: 20px;
   }
 }
