@@ -27,6 +27,7 @@
   text-shadow: -4.4px -4.4px 0 #fff, 4.4px -4.4px 0 #fff, -4.4px 4.4px 0 #fff,
     4.4px 4.4px 0 #fff;
   text-transform: uppercase;
+  line-height: 3ch;
 }
 
 .skill-text > p {

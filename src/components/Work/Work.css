@@ -74,6 +74,11 @@
   position: relative;
 }
 
+.text-container > span {
+  text-transform: uppercase;
+  color: #989898;
+}
+
 .text-container h1 {
   margin: 0;
   font-size: 3em;
@@ -81,6 +86,11 @@
   color: #161616;
   text-shadow: 4px 4px 0 #fff, -4px -4px 0 #fff, 4px -4px 0 #fff,
     -4px 4px 0 #fff, 4px 4px 0 #fff;
+  line-height: 2.5ch;
+}
+
+.text-container h1 span {
+  display: block;
 }
 
 .text-container h3 {

@@ -31,6 +31,7 @@
   color: #161616;
   text-shadow: -4.4px -4.4px 0 #fff, 4.4px -4.4px 0 #fff, -4.4px 4.4px 0 #fff,
     4.4px 4.4px 0 #fff;
+  line-height: 2.5ch;
 }
 
 .about-text p {

@@ -35,8 +35,8 @@ function Work({
       <div className="text-container">
         <h3>PORTFOLIO</h3>
         <h1>
-          {title.split("\n").map((x, index) => (
-            <span key={index}>{x}</span>
+          {title.split("\n").map((x) => (
+            <span key={uuid()}>{x}</span>
           ))}
         </h1>
         <p>{description}</p>
