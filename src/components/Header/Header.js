@@ -11,24 +11,26 @@ function Header() {
     <header>
       <nav className="navbar">
         <div className="logo">
-          <svg
-            width="67"
-            height="49"
-            viewBox="0 0 37 19"
-            fill="#000000"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              id="jlogo"
-              d="M15.6152 0L17.7128 4.74922L18.8936 7.86589L16.6692 6.97541L11.4511 18.1064H6.76659L0 10.8638H6.24608L8.98684 13.5632L15.6152 0Z"
-              fill="#161616"
-            />
-            <path
-              id="alogo"
-              d="M26.6176 4.6626L20.8332 18.5H16.5319L24.5412 0.393616H28.8424L37 18.5H27.5076L25.876 14.6726H31.0672L26.6176 4.6626Z"
-              fill="#161616"
-            />
-          </svg>
+          <a href="#hero">
+            <svg
+              width="67"
+              height="49"
+              viewBox="0 0 37 19"
+              fill="#000000"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="jlogo"
+                d="M15.6152 0L17.7128 4.74922L18.8936 7.86589L16.6692 6.97541L11.4511 18.1064H6.76659L0 10.8638H6.24608L8.98684 13.5632L15.6152 0Z"
+                fill="#161616"
+              />
+              <path
+                id="alogo"
+                d="M26.6176 4.6626L20.8332 18.5H16.5319L24.5412 0.393616H28.8424L37 18.5H27.5076L25.876 14.6726H31.0672L26.6176 4.6626Z"
+                fill="#161616"
+              />
+            </svg>
+          </a>
         </div>
         <div className="menu-icon" onClick={handleClick}>
           {click ? <GoX fontSize="2.5em" /> : <GoThreeBars fontSize="2.5em" />}

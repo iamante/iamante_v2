@@ -28,6 +28,7 @@
   text-shadow: -4.4px -4.4px 0 #fff, 4.4px -4.4px 0 #fff, -4.4px 4.4px 0 #fff,
     4.4px 4.4px 0 #fff;
   text-transform: uppercase;
+  line-height: 3ch;
 }
 
 .form-container > p {
@@ -102,7 +103,7 @@
   text-transform: uppercase;
   color: #fff;
   font-size: 2rem;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .social-container > h3,
