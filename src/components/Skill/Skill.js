@@ -5,7 +5,6 @@ import { CardData } from "./CardData";
 import uuid from "react-uuid";
 
 function Skill() {
-  console.log(CardData.map((x) => Object.keys(x).map((x) => x.split(0, 4))));
   return (
     <section id="skill" className="skill">
       <div className="skill-text">

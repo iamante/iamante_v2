@@ -23,7 +23,7 @@ export const WorkData = [
     image: "/images/work2.png",
     title: "Reactjs \n Personal Portfolio",
     desicription:
-      "Personal portfolio built with Reactjs to enhance my knowledge in react using react hooks, dynamic data and DRY pattern and also in animation and designing using figma.",
+      "Personal portfolio built with Reactjs to enhance my knowledge in react using react hooks, dynamic data and DRY pattern and also in mockups designing using figma.",
 
     tech: [
       {
