@@ -15,19 +15,8 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 function App() {
   const el = useRef();
-  const q = gsap.utils.selector(el);
-
   useEffect(() => {
-    // let tl = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: ".about-text",
-    //     start: "top 90%",
-    //     end: "bottom 70%",
-    //     toggleActions: "play none none complete",
-    //     markers: true,
-    //   },
-    // });
-
+    const q = gsap.utils.selector(el);
     gsap.from(q(".about-text, .about-img"), {
       duration: 2,
       y: "40",
@@ -54,7 +43,6 @@ function App() {
       },
     });
 
-    // gsap.utils.toArray(".work").map((x) => console.log(x));
     gsap.from(q(".img-container, .text-container"), {
       duration: 2,
       y: "40",
