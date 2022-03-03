@@ -11,7 +11,7 @@ function Skill() {
         <h4>My Skills</h4>
         <h1>Expertise</h1>
         <p>
-          Here are some of technologies that i worked with web. From
+          Here are some of technologies that i worked with. From
           front-end & back-end to design.
         </p>
       </div>
