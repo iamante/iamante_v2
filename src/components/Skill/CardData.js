@@ -11,6 +11,8 @@ export const CardData = [
     Nodejs: "/images/icons/nodejs.svg",
     MySQL: "/images/icons/mysql.svg",
     Laravel: "/images/icons/laravel.svg",
-    java: "/images/icons/java.svg",
+    Codeigniter: "/images/icons/codeigniter.svg",
+    Java: "/images/icons/java.svg",
+    Git: "/images/icons/git.svg",
   },
 ];

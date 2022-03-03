@@ -7,7 +7,7 @@ function Hero() {
       <div className="hero-title">
         <h1>
           <span>Ahoy! I'm</span> James <span>Amante</span>
-          <span>A Software Engineer.</span>
+          <span>A software engineer.</span>
         </h1>
       </div>
       <img src="images/cloud.png" alt="black-cloud" />
