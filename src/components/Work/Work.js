@@ -12,6 +12,8 @@ function Work({
   tech,
   github_url,
   figma_url,
+  oa_url,
+  btn_img_icon
 }) {
   return (
     <section id="work" className="work">
@@ -33,7 +35,7 @@ function Work({
         </svg>
       </div>
       <div className="text-container">
-        <h3>PORTFOLIO</h3>
+        {oa_url ? <h3>WORK EXPERIENCE</h3> : <h3>PORTFOLIO</h3>}
         <h1>
           {title.split("\n").map((x) => (
             <span key={uuid()}>{x}</span>
@@ -54,8 +56,8 @@ function Work({
         <div className="btn-container">
           {figma_url ? (
             <Button title="Mockups" icon={<FaFigma />} url={figma_url} />
-          ) : null}
-          <Button title="Source Code" icon={<FaGithub />} url={github_url} />
+          ) : oa_url ? <Button title="Orangeapps" icon={<img src={btn_img_icon} alt="first work" />} url={oa_url} /> : null}
+          {oa_url ? null : <Button title="Source Code" icon={<FaGithub />} url={github_url} />}
         </div>
       </div>
     </section>

@@ -89,6 +89,8 @@ function App() {
               tooltip={data.tooltip}
               github_url={data.github_url}
               figma_url={data.figma_url}
+              oa_url={data.oa_url}
+              btn_img_icon={data.btn_img_icon}
             />
           );
         })}

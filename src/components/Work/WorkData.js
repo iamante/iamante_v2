@@ -1,6 +1,30 @@
 export const WorkData = [
   {
     id: 1,
+    number: "",
+    image: "/images/oa.png",
+    title: "Software Engineer",
+    desicription:
+      "Developing & implementing held all kinds of finance side tasks like cashiering, invoicing, accounting, development of reports and other financial task.",
+
+    tech: [
+      {
+        Laravel: "/images/icons/laravel.svg",
+        Codeigniter: "images/icons/codeigniter.svg",
+        Php: "/images/icons/php.svg",
+        Mysql: "/images/icons/mysql.svg",
+        jQuery: "/images/icons/jquery.svg",
+        Html: "/images/icons/html.svg",
+        Css: "/images/icons/css.svg",
+        Javascript: "/images/icons/javascript.svg",
+        Bootstrap: "/images/icons/bootstrap.svg",
+      },
+    ],
+    oa_url: "https://orangeapps.ph/",
+    btn_img_icon: "/images/icons/oa.png",
+  },
+  {
+    id: 2,
     number: "01",
     image: "/images/work1.png",
     title: "Caraevents \n Management System",
@@ -18,7 +42,7 @@ export const WorkData = [
     github_url: "https://github.com/iamante/caraevents",
   },
   {
-    id: 2,
+    id: 3,
     number: "02",
     image: "/images/work2.png",
     title: "Reactjs \n Personal Portfolio",

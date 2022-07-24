@@ -5,12 +5,12 @@
   align-items: center;
 }
 
-.work:nth-child(odd) {
+.work:nth-child(even) {
   flex-direction: row-reverse;
   padding: 100px 0 100px 50px;
 }
 
-.work:nth-child(even) {
+.work:nth-child(odd) {
   padding: 100px 50px 100px 0;
 }
 
@@ -23,15 +23,15 @@
   position: relative;
 }
 
-.work:nth-child(even) > .img-container svg,
-.work:nth-child(odd) > .img-container svg {
+.work:nth-child(odd) > .img-container svg,
+.work:nth-child(even) > .img-container svg {
   font: bold 92px "Montserrat";
   fill: #fff;
   z-index: 2;
   filter: drop-shadow(0px 4px 2px #000000);
 }
 
-.work:nth-child(odd) > .img-container svg text {
+.work:nth-child(even) > .img-container svg text {
   transform: translateX(-60%);
 }
 
@@ -50,7 +50,7 @@
   z-index: 2;
 }
 
-.work:nth-child(odd) > .img-container > img {
+.work:nth-child(even) > .img-container > img {
   max-width: 120%;
   height: auto;
   position: absolute;
@@ -58,7 +58,7 @@
   z-index: 1;
 }
 
-.work:nth-child(even) > .img-container > img {
+.work:nth-child(odd) > .img-container > img {
   max-width: 120%;
   height: auto;
   position: absolute;
@@ -224,23 +224,23 @@
     width: 30px;
   }
 
-  .work:nth-child(odd),
-  .work:nth-child(even) {
+  .work:nth-child(even),
+  .work:nth-child(odd) {
     padding: 80px 0 80px 0;
   }
 
-  .work:nth-child(odd) > .img-container svg text {
+  .work:nth-child(even) > .img-container svg text {
     transform: translateX(-60%);
   }
 
-  .work:nth-child(even) > .img-container > img {
+  .work:nth-child(odd) > .img-container > img {
     left: -80px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .work:nth-child(even),
-  .work:nth-child(odd) {
+  .work:nth-child(odd),
+  .work:nth-child(even) {
     padding: 50px 20px;
     flex-direction: column;
   }
@@ -253,18 +253,6 @@
     height: 330px;
   }
 
-  .work:nth-child(even) > .img-container > img {
-    height: 100%;
-    width: auto;
-    left: auto;
-    padding: 30px;
-  }
-
-  .work:nth-child(even) > .img-container svg text {
-    font-size: 100px;
-    transform: translateX(15%);
-  }
-
   .work:nth-child(odd) > .img-container > img {
     height: 100%;
     width: auto;
@@ -274,30 +262,42 @@
 
   .work:nth-child(odd) > .img-container svg text {
     font-size: 100px;
+    transform: translateX(15%);
+  }
+
+  .work:nth-child(even) > .img-container > img {
+    height: 100%;
+    width: auto;
+    left: auto;
+    padding: 30px;
+  }
+
+  .work:nth-child(even) > .img-container svg text {
+    font-size: 100px;
     transform: translateX(-75%);
   }
 }
 
 @media screen and (max-width: 483px) {
-  .work:nth-child(even) > .img-container svg text {
+  .work:nth-child(odd) > .img-container svg text {
     transform: translateY(10%);
     font-size: 80px;
   }
 
-  .work:nth-child(odd) > .img-container svg text {
+  .work:nth-child(even) > .img-container svg text {
     transform: translate(-65%, 10%);
     font-size: 80px;
   }
 
-  .work:nth-child(odd) > .img-container > img,
-  .work:nth-child(even) > .img-container > img {
+  .work:nth-child(even) > .img-container > img,
+  .work:nth-child(odd) > .img-container > img {
     height: 80%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .work:nth-child(even),
-  .work:nth-child(odd) {
+  .work:nth-child(odd),
+  .work:nth-child(even) {
     padding: 30px 10px;
   }
 
