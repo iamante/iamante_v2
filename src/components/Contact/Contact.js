@@ -34,7 +34,7 @@ function Contact() {
 						className="sent"
 					/>
 				) : null}
-				<img src="/images/james-eye.png" alt="james eye" />
+				<img src="/images/james-eye.png" alt="james eye" draggable="false"/>
 				<h1>James Amante</h1>
 				<h3>Software Engineer</h3>
 				<p>Connect</p>
