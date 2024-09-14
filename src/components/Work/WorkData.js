@@ -9,6 +9,7 @@ export const WorkData = [
 
     tech: [
       {
+        Springboot: "/images/icons/springboot.png",
         Laravel: "/images/icons/laravel.svg",
         Codeigniter: "images/icons/codeigniter.svg",
         Php: "/images/icons/php.svg",

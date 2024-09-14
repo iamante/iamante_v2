@@ -13,6 +13,7 @@ export const CardData = [
     Laravel: "/images/icons/laravel.svg",
     Codeigniter: "/images/icons/codeigniter.svg",
     Java: "/images/icons/java.svg",
+    Springboot: "/images/icons/springboot.svg",
     Git: "/images/icons/git.svg",
   },
 ];
