@@ -12,7 +12,7 @@ export const WorkData = [
         Laravel: "/images/icons/laravel.svg",
         Codeigniter: "images/icons/codeigniter.svg",
         Php: "/images/icons/php.svg",
-        Springboot: "/images/icons/springboot.png",
+        // Springboot: "/images/icons/springboot.png",
         Java: "/images/icons/java.svg",
         Mysql: "/images/icons/mysql.svg",
         jQuery: "/images/icons/jquery.svg",
