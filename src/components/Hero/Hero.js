@@ -45,45 +45,45 @@ function Hero() {
         </h1>
       </div>
 
-      {/* Pirate Boat */}
+      
       <div className="pirate-boat-container" ref={boatRef}>
         <svg className="pirate-boat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250">
-          {/* Water waves */}
+          
           <path d="M 0 200 Q 75 190 150 200 T 300 200 L 300 250 L 0 250 Z" fill="#1a1a2e" opacity="0.3"/>
 
-          {/* Hull */}
+          
           <path d="M 50 180 L 70 200 L 230 200 L 250 180 Z" fill="#1a1a1a" stroke="#0a0a0a" strokeWidth="2"/>
           <ellipse cx="150" cy="180" rx="100" ry="25" fill="#2a2a2a"/>
 
-          {/* Porthole 1 */}
+          
           <circle cx="120" cy="185" r="5" fill="#444"/>
 
-          {/* Porthole 2 */}
+          
           <circle cx="150" cy="185" r="5" fill="#444"/>
 
-          {/* Porthole 3 */}
+          
           <circle cx="180" cy="185" r="5" fill="#444"/>
 
-          {/* Main Mast */}
+          
           <line x1="150" y1="180" x2="150" y2="40" stroke="#3a3a3a" strokeWidth="4"/>
 
-          {/* Main Sail */}
+         
           <polygon points="150,60 150,170 220,170" fill="#1a1a1a" stroke="#0a0a0a" strokeWidth="2" opacity="0.9"/>
           <polygon points="150,60 150,170 220,170" fill="#2a2a2a" opacity="0.5" filter="url(#shadow)"/>
 
-          {/* Front Sail (Jib) */}
+          
           <polygon points="150,80 150,170 90,170" fill="#0a0a0a" stroke="#000" strokeWidth="2" opacity="0.8"/>
 
-          {/* Mast rigging ropes */}
+          
           <line x1="150" y1="40" x2="220" y2="170" stroke="#4a4a4a" strokeWidth="1" opacity="0.6"/>
           <line x1="150" y1="40" x2="90" y2="170" stroke="#4a4a4a" strokeWidth="1" opacity="0.6"/>
           <line x1="150" y1="100" x2="220" y2="170" stroke="#4a4a4a" strokeWidth="1" opacity="0.4"/>
           <line x1="150" y1="100" x2="90" y2="170" stroke="#4a4a4a" strokeWidth="1" opacity="0.4"/>
 
-          {/* Flag Mast */}
+          
           <line x1="150" y1="40" x2="150" y2="20" stroke="#3a3a3a" strokeWidth="2"/>
 
-          {/* Pirate Flag (Jolly Roger) */}
+          
           <g ref={flagRef} style={{ transformOrigin: "150px 20px" }}>
             <rect x="150" y="20" width="50" height="35" fill="#000" stroke="#888" strokeWidth="1"/>
             {/* Skull */}
@@ -96,7 +96,7 @@ function Hero() {
             <circle cx="188" cy="45" r="2" fill="#fff"/>
           </g>
 
-          {/* Anchor */}
+          
           <g>
             <line x1="240" y1="180" x2="240" y2="210" stroke="#555" strokeWidth="2"/>
             <path d="M 235 210 Q 240 215 245 210" fill="none" stroke="#555" strokeWidth="2"/>
@@ -104,7 +104,7 @@ function Hero() {
             <circle cx="245" cy="210" r="2" fill="#555"/>
           </g>
 
-          {/* Shadow filter */}
+          
           <defs>
             <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
               <feDropShadow dx="2" dy="2" stdDeviation="3" floodOpacity="0.3"/>
