@@ -118,6 +118,6 @@ function Hero() {
       <img src="images/light2.png" alt="lightning" id="light2" draggable="false"/>
       <img src="images/cloud-f.png" alt="black-cloud-front" draggable="false"/>
     </section>
-};
+})
 
 export default Hero;
