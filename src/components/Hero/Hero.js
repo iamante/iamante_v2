@@ -86,11 +86,11 @@ function Hero() {
           
           <g ref={flagRef} style={{ transformOrigin: "150px 20px" }}>
             <rect x="150" y="20" width="50" height="35" fill="#000" stroke="#888" strokeWidth="1"/>
-            {/* Skull */}
+            
             <circle cx="168" cy="30" r="6" fill="#fff"/>
             <circle cx="182" cy="30" r="6" fill="#fff"/>
             <circle cx="175" cy="37" r="5" fill="#fff"/>
-            {/* Crossbones */}
+            
             <line x1="162" y1="45" x2="188" y2="45" stroke="#fff" strokeWidth="1.5"/>
             <circle cx="162" cy="45" r="2" fill="#fff"/>
             <circle cx="188" cy="45" r="2" fill="#fff"/>
