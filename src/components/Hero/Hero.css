@@ -199,3 +199,18 @@
     font-size: 20px;
   }
 }
+
+.pirate-boat-container {
+    width: 100%;
+    max-width: 400px; /* Adjust based on mobile screen */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.pirate-boat {
+    width: 100%;
+    height: auto;
+}
